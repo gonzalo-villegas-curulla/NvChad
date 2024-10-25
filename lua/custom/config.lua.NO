@@ -1,0 +1,9 @@
+-- Set commentstring for C++ and CUDA
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"cpp", "cuda"},
+    callback = function()
+        --vim.bo.commentstring = "// %s"
+        print("Hola, recognised")
+    end,
+})
